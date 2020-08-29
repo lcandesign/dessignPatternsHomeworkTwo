@@ -28,8 +28,7 @@ public class MySQLDBAdapter implements DbAdapter {
             String url = "jdbc:mysql://${host}:${port}/${db}?zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useUnicode=true&amp;characterEncoding=UTF-8;"
                 .replace("${host}", host).replace("${port}", port).replace("${db}", db);
 
-            Connection connection = DriverManager.getConnection(url, user, password);
-            return connection;
+            return DriverManager.getConnection(url, user, password);
         } catch (Exception e) {
             throw new RuntimeException("MySQL connection error " + e.getMessage());
         }

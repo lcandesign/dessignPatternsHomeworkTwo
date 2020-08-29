@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public class UserRepository {
 
-    private EntityManager entityManager;
+    final private EntityManager entityManager;
 
     public UserRepository(EntityManager entityManager) {
         this.entityManager = entityManager;

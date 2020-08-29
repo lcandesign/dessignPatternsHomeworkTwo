@@ -30,7 +30,7 @@ public class BaseAppSystem {
         User user = new User(userInputService.getName(),userInputService.getLastName(),userInputService.getCar());
         UserRepository userRepository = new UserRepository(entityManager);
         Optional<User> savedUser = userRepository.save(user);
-        System.out.println("Usuario guardado: " + savedUser.get().toString());
+        System.out.println("Usuario guardado: " + (savedUser.map(User::toString).orElse(null)));
 
         entityManager.close();
         entityManagerFactory.close();
