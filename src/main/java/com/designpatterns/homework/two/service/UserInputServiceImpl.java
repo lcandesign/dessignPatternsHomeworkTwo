@@ -18,11 +18,11 @@ public class UserInputServiceImpl implements UserInput {
     public UserInputServiceImpl getUserInput() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Introduce el nombre del usuario: ");
-        String name = scan.next();
+        String name = scan.nextLine();
         System.out.print("Introduce el apellido del usuario: ");
-        String lastName = scan.next();
+        String lastName = scan.nextLine();
         System.out.print("Introduce el modelo de auto seleccionado: ");
-        String car = scan.next();
+        String car = scan.nextLine();
         return new UserInputServiceImpl(name, lastName, car);
     }
 

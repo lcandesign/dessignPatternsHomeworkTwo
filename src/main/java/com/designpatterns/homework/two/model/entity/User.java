@@ -60,10 +60,10 @@ public class User implements Serializable {
     @Override
     public String toString() {
         return "Usuario {" +
-            "id=" + id +
-            ", nombre='" + name + '\'' +
-            ", apellido=" + lastName +
-            ", auto='" + car + '\'' +
+            "\"id\":" +"\"" + id +"\""+
+            ",\"nombre\":\"" + name + "\"" +
+            ",\"apellido\":\""+ lastName + "\"" +
+            ",\"auto\":\"" + car + "\"" +
             '}';
     }
 }

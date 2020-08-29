@@ -1,12 +1,16 @@
 package com.designpatterns.homework.two.service.dbConection;
 
-import com.designpatterns.homework.two.model.ConfigLoader;
 import com.designpatterns.homework.two.service.DbAdapter;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class MySQLDBAdapter implements DbAdapter {
+
+    private final String user;
+    private final String password;
+    private final String host;
+    private final String port;
+    private final String db;
 
     static {
         try {
@@ -16,15 +20,17 @@ public class MySQLDBAdapter implements DbAdapter {
         }
     }
 
+    public MySQLDBAdapter(String user, String password, String host, String port, String db) {
+        this.user = user;
+        this.password = password;
+        this.host = host;
+        this.port = port;
+        this.db = db;
+    }
+
     @Override
     public Connection getConnection() {
         try {
-            String user = ConfigLoader.getProperty("MySQL.user");
-            String password = ConfigLoader.getProperty("MySQL.password");
-            String host = ConfigLoader.getProperty("MySQL.host");
-            String port = ConfigLoader.getProperty("MySQL.port");
-            String db = ConfigLoader.getProperty("MySQL.db");
-
             String url = "jdbc:mysql://${host}:${port}/${db}?zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useUnicode=true&amp;characterEncoding=UTF-8;"
                 .replace("${host}", host).replace("${port}", port).replace("${db}", db);
 
