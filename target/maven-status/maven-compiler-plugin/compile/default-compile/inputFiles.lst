@@ -1,0 +1,11 @@
+C:\Users\lcandelario\Documents\workspace\DesignPatternsHomeworkTwo\src\main\java\com\designpatterns\homework\two\AppSystem.java
+C:\Users\lcandelario\Documents\workspace\DesignPatternsHomeworkTwo\src\main\java\com\designpatterns\homework\two\model\repository\UserRepository.java
+C:\Users\lcandelario\Documents\workspace\DesignPatternsHomeworkTwo\src\main\java\com\designpatterns\homework\two\service\UserInputServiceImpl.java
+C:\Users\lcandelario\Documents\workspace\DesignPatternsHomeworkTwo\src\main\java\com\designpatterns\homework\two\service\dbConection\MySQLDBAdapter.java
+C:\Users\lcandelario\Documents\workspace\DesignPatternsHomeworkTwo\src\main\java\com\designpatterns\homework\two\model\BaseAppSystem.java
+C:\Users\lcandelario\Documents\workspace\DesignPatternsHomeworkTwo\src\main\java\com\designpatterns\homework\two\factories\Factory.java
+C:\Users\lcandelario\Documents\workspace\DesignPatternsHomeworkTwo\src\main\java\com\designpatterns\homework\two\factories\DbFactory.java
+C:\Users\lcandelario\Documents\workspace\DesignPatternsHomeworkTwo\src\main\java\com\designpatterns\homework\two\service\DbAdapter.java
+C:\Users\lcandelario\Documents\workspace\DesignPatternsHomeworkTwo\src\main\java\com\designpatterns\homework\two\service\UserInput.java
+C:\Users\lcandelario\Documents\workspace\DesignPatternsHomeworkTwo\src\main\java\com\designpatterns\homework\two\model\ConfigLoader.java
+C:\Users\lcandelario\Documents\workspace\DesignPatternsHomeworkTwo\src\main\java\com\designpatterns\homework\two\model\entity\User.java
